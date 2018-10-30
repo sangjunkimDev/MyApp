@@ -3,7 +3,7 @@ package com.project.sangjun.myapp.util;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class MyActivity extends Activity {
+public abstract class BaseActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
