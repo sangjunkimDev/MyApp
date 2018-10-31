@@ -14,7 +14,6 @@
 
         <activity
             android:name=".view.splash.SplashActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,9 +32,12 @@
         </activity>
 
         <activity android:name=".view.main.MainActivity"/>
-
-        <activity android:name=".view.webview.WebViewActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".view.webview.WebViewActivity"/>
+        <activity android:name=".view.autocompletetextview.AutoCompleteTextViewActivity"/>
+        <activity android:name=".view.progressAndSeekBar.ProgressAndSeekBarActivity"/>
+        <activity android:name=".view.actionbar.ActionbarActivity"
+            android:label="액션바"
+            android:theme="@style/AppTheme"/>
 
 
 

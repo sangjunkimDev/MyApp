@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".view.actionbar.ActionbarActivity">
 
-    <Spinner
-        android:id="@+id/sp_list"
+    <ImageView
+        android:id="@+id/iv_context_menu"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/naver_com_20140829_014645"/>
+
+    <TextView
+        android:id="@+id/tv_value"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
-
-    <Button
-        android:id="@+id/bt_submit"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/string1"/>
 
 </LinearLayout>

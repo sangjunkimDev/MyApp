@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_1"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="메뉴1"/>
+
+    <item
+        android:id="@+id/menu_2"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="메뉴2"/>
+
+    <item
+        android:id="@+id/menu_3"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="메뉴3">
+
+        <menu>
+            <item
+                android:id="@+id/menu_3_1"
+                android:title="메뉴3_1"/>
+
+            <item
+                android:id="@+id/menu_3_2"
+                android:title="메뉴3_2"/>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/menu_5"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Check"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:actionLayout="@layout/actionview_check"/>
+
+</menu>

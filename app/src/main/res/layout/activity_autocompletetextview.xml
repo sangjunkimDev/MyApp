@@ -3,17 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".view.autocompletetextview.AutoCompleteTextViewActivity">
 
-    <Spinner
-        android:id="@+id/sp_list"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-
-    <Button
-        android:id="@+id/bt_submit"
+    <AutoCompleteTextView
+        android:id="@+id/ac_tv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/string1"/>
+        android:dropDownHeight="150dp"/>
 
 </LinearLayout>
