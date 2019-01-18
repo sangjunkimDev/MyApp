@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.project.sangjun.myapp.R;
 import com.project.sangjun.myapp.util.BaseActivity;
+import com.project.sangjun.myapp.view.CustomViewActivity;
 import com.project.sangjun.myapp.view.actionbar.ActionbarActivity;
 import com.project.sangjun.myapp.view.autocompletetextview.AutoCompleteTextViewActivity;
 import com.project.sangjun.myapp.view.progressAndSeekBar.ProgressAndSeekBarActivity;
@@ -53,6 +54,8 @@ public class MainActivity extends BaseActivity {
         datas.add("AutoCompleteTextView");
         datas.add("ProgressAndSeekBar");
         datas.add("ActionBar");
+        datas.add("CustomViewActivity");
+
 
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, datas);
@@ -90,6 +93,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case "ActionBar" :
                 clazz = ActionbarActivity.class;
+                break;
+            case "CustomViewActivity" :
+                clazz = CustomViewActivity.class;
                 break;
         }
 
