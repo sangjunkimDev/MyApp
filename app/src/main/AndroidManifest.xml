@@ -3,7 +3,12 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!-- Marshmallow fingerprint permission-->
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!-- Samsung fingerprint permission, only required if you include the Spass module -->
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
 
     <application
         android:name=".util.MyApplication"
@@ -42,6 +47,8 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".view.CustomViewActivity"/>
         <activity android:name=".view.finger_print.FingerPrintActivity"/>
+        <activity android:name=".view.finger_print.FingerPrintActivity_2"/>
+        <activity android:name=".view.finger_print.FingerPrintActivity_3"/>
 
 
 
