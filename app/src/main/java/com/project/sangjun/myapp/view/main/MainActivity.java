@@ -15,6 +15,7 @@ import com.project.sangjun.myapp.util.BaseActivity;
 import com.project.sangjun.myapp.view.CustomViewActivity;
 import com.project.sangjun.myapp.view.actionbar.ActionbarActivity;
 import com.project.sangjun.myapp.view.autocompletetextview.AutoCompleteTextViewActivity;
+import com.project.sangjun.myapp.view.finger_print.FingerPrintActivity;
 import com.project.sangjun.myapp.view.progressAndSeekBar.ProgressAndSeekBarActivity;
 import com.project.sangjun.myapp.view.webview.WebViewActivity;
 
@@ -55,6 +56,7 @@ public class MainActivity extends BaseActivity {
         datas.add("ProgressAndSeekBar");
         datas.add("ActionBar");
         datas.add("CustomViewActivity");
+        datas.add("지문 인증");
 
 
 
@@ -96,6 +98,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case "CustomViewActivity" :
                 clazz = CustomViewActivity.class;
+                break;
+            case "지문 인증" :
+                clazz = FingerPrintActivity.class;
                 break;
         }
 
